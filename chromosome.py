@@ -39,6 +39,7 @@ class Chromosome():
             if sgene == tgene:
                 score += 1
         self.fitness = score / len(target)
+        self.fitness = pow(self.fitness, 4)
 
     def crossover(self, partner):
         """Combine by taking part from one parent and part from another"""

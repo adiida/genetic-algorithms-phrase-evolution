@@ -7,7 +7,7 @@ import math
 def init():
     target_phrase = "An algorithm must be seen to be believed"
     mutation_rate = 0.01
-    pop_size = 300
+    pop_size = 100
     population = Population(target_phrase, mutation_rate, pop_size)
     return population
 
